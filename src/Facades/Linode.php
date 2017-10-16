@@ -2,10 +2,10 @@
 /**
  * Linode api facade
  *
- * @package kudosagency/linodev4
+ * @package agiuscloud/linode-api-laravel
  * @author Trevor Sewell <trevor@fastfwd.com>
  */
-namespace Kudosagency\Linodev4\Facades;
+namespace AgiusCloud\Linode\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

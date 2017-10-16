@@ -2,14 +2,14 @@
 /**
  * Linode api service provider
  *
- * @package kudosagency/linodev4
+ * @package agiuscloud/linode-api-laravel
  * @author Trevor Sewell <trevor@fastfwd.com>
  */
-namespace Kudosagency\Linodev4;
+namespace AgiusCloud\Linode;
 
 use Illuminate\Support\ServiceProvider;
 
-class LinodeV4ServiceProvider extends ServiceProvider
+class LinodeServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -19,7 +19,7 @@ class LinodeV4ServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/linodev4.php' => config_path('linodev4.php'),
+            __DIR__.'/config/linode.php' => config_path('linode.php'),
         ]);
     }
 

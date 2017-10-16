@@ -2,13 +2,13 @@
 /**
  * Linode api controller
  *
- * @package kudosagency/linodev4
+ * @package agiuscloud/linode-api-laravel
  * @author Trevor Sewell <trevor@fastfwd.com>
  */    
-namespace Kudosagency\Linodev4\Controllers;
+namespace AgiusCloud\Linode\Controllers;
 
 use App\Http\Controllers\Controller;
-use Kudosagency\Linodev4\Models\Api;
+use AgiusCloud\Linode\Models\Api;
 
 class Linode extends Controller
 {
@@ -25,8 +25,8 @@ class Linode extends Controller
      */
     public function __construct()
     {
-        $this->token = config('linodev4.token') ;
-        $this->type = config('linodev4.type') ;
+        $this->token = config('linode.token') ;
+        $this->type = config('linode.type') ;
         $this->api = new Api ;
     }
     
@@ -41,7 +41,7 @@ class Linode extends Controller
     {
         $api = new Api ;
         $response = call_user_func_array([$api,$name], $arguments) ;
-        if(config('linodev4.type')!=='JSON') $response = json_decode($response, config('linodev4.type')) ;
+        if(config('linode.type')!=='JSON') $response = json_decode($response, config('linode.type')) ;
         return $response ;
     }
     

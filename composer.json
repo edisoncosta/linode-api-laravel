@@ -1,5 +1,5 @@
 {
-    "name": "kudosagency/linodev4",
+    "name": "AgiusCloud/linode-api-laravel",
     "description": "Laravel package for Linode V4 Api",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kudosagency\\Linodev4\\": "src/"
+            "AgiusCloud\\Linode\\": "src/"
         }
     }
 }

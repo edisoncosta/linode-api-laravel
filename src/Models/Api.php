@@ -2,10 +2,10 @@
 /**
  * Curl wrapper
  *
- * @package kudosagency/linodev4
+ * @package agiuscloud/linode-api-laravel
  * @author Trevor Sewell <trevor@fastfwd.com>
  */
-namespace Kudosagency\Linodev4\Models;
+namespace AgiusCloud\Linode\Models;
 
 class Api
 {
@@ -21,10 +21,10 @@ class Api
      */
     public function __construct()
     {
-        $this->endpoint = config('linodev4.endpoint') ;
+        $this->endpoint = config('linode.endpoint') ;
         $this->headers = [
             'Content-Type: application/json',
-            'Authorization: token '.config('linodev4.token')
+            'Authorization: token '.config('linode.token')
         ];
     }
 
@@ -63,7 +63,7 @@ class Api
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_URL => $this->endpoint . $url,
             CURLOPT_POST => 1,
-            CURLOPT_POSTFIELDS => http_build_query($data),
+            CURLOPT_POSTFIELDS => json_encode($data),
             CURLOPT_HTTPHEADER => $this->headers
         ]);
         $response = curl_exec($curl);
@@ -86,7 +86,7 @@ class Api
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_URL => $this->endpoint . $url,
             CURLOPT_CUSTOMREQUEST => 'PUT',
-            CURLOPT_POSTFIELDS => http_build_query($data),
+            CURLOPT_POSTFIELDS => json_encode($data),
             CURLOPT_HTTPHEADER => $this->headers
         ]);
         $response = curl_exec($curl);
