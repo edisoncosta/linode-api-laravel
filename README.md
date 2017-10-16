@@ -30,7 +30,7 @@ php artisan vendor:publish
 LINODE_TOKEN=Your_personal_access_token
 ```
 
-You can create your token by visiting [your Linode](https://cloud.linode.com/profile/integrations/tokens) or [your Linode](https://cloud.linode.com/profile/tokens) if you are using the newer linode manager.
+You can create your token by visiting [your Linode](https://cloud.linode.com/profile/tokens) if you are using the newer linode manager.
 
 ## Usage
 Add to your class
