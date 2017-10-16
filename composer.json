@@ -1,5 +1,5 @@
 {
-    "name": "AgiusCloud/linode-api-laravel",
+    "name": "agiuscloud/linode-api-laravel",
     "description": "Laravel package for Linode V4 Api",
     "license": "MIT",
     "authors": [
