@@ -1,0 +1,20 @@
+{
+    "name": "kudosagency/linodev4",
+    "description": "Laravel package for Linode V4 Api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Trevor Sewell",
+            "email": "trev@kudos.agency"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kudosagency\\Linodev4\\": "src/"
+        }
+    }
+}
