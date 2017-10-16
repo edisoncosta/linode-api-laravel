@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'endpoint' => env('LINODEV4_ENDPOINT', 'https://api.linode.com/v4/'),
+    'endpoint' => env('LINODE_ENDPOINT', 'https://api.linode.com/v4/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -16,7 +16,7 @@ return [
     |--------------------------------------------------------------------------
     |
     */
-    'token' => env('LINODEV4_TOKEN', ''),
+    'token' => env('LINODE_TOKEN', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,6 +26,6 @@ return [
     | Supported: "JSON", "Array", "Object"
     |
     */
-    'type' => env('LINODEV4_TYPE', 'JSON')
+    'type' => env('LINODE_TYPE', 'JSON')
     
 ];

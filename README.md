@@ -27,7 +27,7 @@ php artisan vendor:publish
 
 ## Add your personal access token to your config (/config/linode.php) or env file
 ```
-LINODEV4_TOKEN=Your_personal_access_token
+LINODE_TOKEN=Your_personal_access_token
 ```
 
 You can create your token by visiting [your Linode](https://cloud.linode.com/profile/integrations/tokens) or [your Linode](https://cloud.linode.com/profile/tokens) if you are using the newer linode manager.
