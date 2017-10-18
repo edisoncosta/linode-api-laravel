@@ -58,6 +58,19 @@ $linode->put('linode/instances/999', [
 // delete a linode
 $linode->delete('linode/instances/999');
 
+// [Filtering & Sorting](https://developers.linode.com/v4/filtering)
+
+$linode->get('linode/distributions', [
+    "vendor" => "Debian"
+]);
+
+$linode->get('linode/distributions', [
+    "+or" =>
+        [
+            ["vendor" => "Debian"],
+            ["deprecated" => true]
+        ]
+]);
 ```
 
 Or, you can use the facade

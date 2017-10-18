@@ -6,6 +6,10 @@
         {
             "name": "Trevor Sewell",
             "email": "trev@kudos.agency"
+        },
+        {
+            "name": "Edison Costa",
+            "email": "edison@agiuscloud.com"
         }
     ],
     "minimum-stability": "dev",

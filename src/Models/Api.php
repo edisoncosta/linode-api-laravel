@@ -32,10 +32,15 @@ class Api
      * Get method
      *
      * @var string $url
+     * @var array $query
      * @return json
+     * 
      */
-    public function get(string $url)
+    public function get(string $url, array $query=null)
     {
+        if ($query) {
+            $this->headers[] = 'X-Filter: ' . json_encode($query);
+        }
         $url = $this->endpoint . $url;
         $curl = curl_init();
         curl_setopt_array($curl, [
