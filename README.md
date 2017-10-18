@@ -58,8 +58,10 @@ $linode->put('linode/instances/999', [
 // delete a linode
 $linode->delete('linode/instances/999');
 
-// [Filtering & Sorting](https://developers.linode.com/v4/filtering)
+```
 
+[Filtering & Sorting](https://developers.linode.com/v4/filtering)
+```
 $linode->get('linode/distributions', [
     "vendor" => "Debian"
 ]);
