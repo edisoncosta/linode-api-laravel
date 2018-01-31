@@ -24,7 +24,7 @@ class Api
         $this->endpoint = config('linode.endpoint') ;
         $this->headers = [
             'Content-Type: application/json',
-            'Authorization: token '.config('linode.token')
+            'Authorization: Bearer '.config('linode.token')
         ];
     }
 
